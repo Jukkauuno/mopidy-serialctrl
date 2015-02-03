@@ -1,4 +1,5 @@
-import pykka, serial, time
+import pykka
+import serial
 
 from mopidy import core
 

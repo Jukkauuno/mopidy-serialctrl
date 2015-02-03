@@ -20,6 +20,7 @@ Mopidy-Serial
 
 Mopidy Serial Frontend
 
+Control Mopidy with e.g. Arduino
 
 Installation
 ============
@@ -39,8 +40,12 @@ Before starting Mopidy, you must add configuration for
 Mopidy-Serial to your Mopidy configuration file::
 
     [serial]
-    # TODO: Add example of extension config
+    port = 'dev/ttyACM0' # Default USB interface
+    baud = 9600
 
+    # Set the playlist names for the different selectable channels
+    channel_1 = 'Mopidy-Jazz'
+    channel_2 = 'Mopidy-Singer&Songwriter'
 
 Project resources
 =================

@@ -30,4 +30,3 @@ class Extension(ext.Extension):
         
         from .frontend import SerialFrontend
         registry.add('frontend', SerialFrontend)
-        })

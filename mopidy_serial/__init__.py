@@ -24,7 +24,8 @@ class Extension(ext.Extension):
 
     def get_config_schema(self):
         schema = super(Extension, self).get_config_schema()
-        schema['port'] = config.String()
+        #schema['username'] = config.String()
+	schema['port'] = config.String()
 	schema['baud'] = config.Integer()
 	schema['channel_1'] = config.String()
 	schema['channel_2'] = config.String()
